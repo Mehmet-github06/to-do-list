@@ -1,153 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&display=swap');
+
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Agbalumo;
 }
 
 body {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://cdn.pixabay.com/photo/2016/12/16/15/25/christmas-1911637_640.jpg);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    background-color: rgb(84, 125, 125);
-    width: 65%;
-    margin: auto;
-    height: 80vh;
-    border-radius: 20px;
-    overflow: auto;
-    padding: 1rem;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background: #BA8B02; 
+background: -webkit-linear-gradient(to right, #181818, #BA8B02);  
+background: linear-gradient(to right, #181818, #BA8B02); 
+
+  width: 65%;
+  margin: auto;
+  height: 80vh;
+  border-radius: 20px;
+  overflow: auto;
+  padding: 0 1rem 1rem;
+
 }
 
 .container::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .header {
-    width: 100%;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    
+  width: 100%;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  background: #BA8B02; 
+  background: -webkit-linear-gradient(to right, #181818, #BA8B02);  
+  background: linear-gradient(to right, #181818, #BA8B02); 
+  z-index: 1;
 }
 
 h2 {
-    color: brown;
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 1rem 0;
+  color: rgb(214, 17, 17);
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem 0;
+  text-shadow: 5px 5px 5px black;
 }
 
-/* section {
-    width: 90%;
-} */
+
 
 .add-section {
-    /* width: 100%; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .task-list {
-    width: 100%;
+  width: 100%;
 }
 
 .input {
-    /* width: 75%; */
-    padding: 1rem;
-    border: none;
-    outline: none;
-    font-size: 1rem;
-    flex: 1;
-    margin-right: .5rem;
-    border-radius: 5px;
+  /* width: 75%; */
+  padding: 1rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  flex: 1;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+  background-color: rgb(173, 180, 68);
 }
 
 .add-btn {
-    width: 4rem;
-    padding: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    border: none;
+  width: 4rem;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(173, 180, 68);
 }
-.add-btn:active{
-    transform: scale(95%);
-    transition: .2s;
-    color: white;
-    background-color: red;
+.add-btn{
+  transform: scale(95%);
+  transition: 0.2s;
+  color: white;
+  background-color: red;
 }
 
 .add-btn i {
-    font-size: 1rem;
+  font-size: 1rem;
 }
-.list li  i:active{
-    transform: scale(95%);
-    transition: .2s;
-   
+.list li i:active {
+  transform: scale(95%);
+  transition: 0.2s;
 }
 
-/* .li-item {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-} */
 
 .list li {
-    padding: 0.5rem;
-    display: flex;
-    align-items: center;
-    border: 1px solid;
-    border-radius: 5px;
-    margin: 5px 0;
-    color: white;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 5px;
+  margin: 5px 0;
+  color: rgb(173, 180, 68);
 }
 
 .list li i {
-    border: 1px solid red;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: red;
-    color: white;
-    box-shadow: 0px 0px 5px black;
-    cursor: pointer;
+  border: 1px solid red;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  color: white;
+  box-shadow: 0px 0px 5px black;
+  cursor: pointer;
 }
 
 span {
-    font-size: 1.5rem;
-    flex: 1;
-    padding: 0 .5rem;
+  font-size: 1.5rem;
+  flex: 1;
+  padding: 0 0.5rem;
 }
 
-.reset{
-    width: 50px;
-    display: none;
-    padding:3px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    font-size: 1.3rem;
-    font-weight: bold;
-    background-color: red;
-    color: white;
-    
+.reset {
+  width: 50px;
+  display: none;
+  padding: 3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background-color: red;
+  color: white;
 }
-.reset:hover{
-    transform: scale(95%);
-    transition: .2s;
-    color: white;
-    background-color: red;
+.reset:hover {
+  transform: scale(95%);
+  transition: 0.2s;
+  color: white;
+  background-color: red;
+}
+
+
+@media screen and ( max-width : 576px) {
+    
+    h2{
+        font-size: 1rem;
+    }
+    .add-section{
+        flex-direction: column;
+        gap: .5rem;
+
+    }
+    .input{
+        flex: 0;
+        width: 100%;
+        padding: .5rem;
+        border: none;
+        outline: none;
+        font-size: .5rem;
+        
+    }
+    .container{
+        width: 90%;
+    }
+    .add-btn{
+        width: 2rem;
+        padding: .3rem;
+    }
+    span{
+        font-size: 1rem;
+    }
+    .list li i{
+        font-size: .5rem;
+        width: 1rem;
+        height: 1rem;
+
+    }
+    .reset{
+        width: 2rem;
+        padding: .3rem;
+        text-align: center;
+    }
+   
+
 }

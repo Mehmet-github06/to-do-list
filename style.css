@@ -94,9 +94,9 @@ h2 {
   border: none;
   background-color: rgb(173, 180, 68);
 }
-.add-btn{
+.add-btn:hover{
   transform: scale(95%);
-  transition: 0.2s;
+  transition: 0.5s;
   color: white;
   background-color: red;
 }

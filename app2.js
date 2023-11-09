@@ -21,7 +21,7 @@ addButton.addEventListener("click", () =>{
 
         const tik = document.createElement("i");
         li.appendChild(tik);
-        tik.setAttribute("class","fa-solid fa-check");
+        tik.setAttribute("class","fa-solid fa-check ");
 
        const text =document.createElement("span");
         li.appendChild(text);
@@ -35,7 +35,7 @@ addButton.addEventListener("click", () =>{
         input.focus();
 
         tik.addEventListener("click",()=>{
-            text.style.textDecoration = "line-through";
+            text.classList.toggle("cizgi");
             text.style.color="red";
             reset.style.display="block";
             reset.addEventListener("click",()=>{

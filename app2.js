@@ -35,11 +35,11 @@ addButton.addEventListener("click", () =>{
         input.focus();
 
         tik.addEventListener("click",()=>{
-            text.classList.toggle("cizgi");
             text.style.color="red";
+            text.classList.toggle("cizgi");
             reset.style.display="block";
             reset.addEventListener("click",()=>{
-                if( text.style.color="red"){
+                if( text.style.color==="red"){
                     li.remove()
                     reset.style.display="none";
                 }

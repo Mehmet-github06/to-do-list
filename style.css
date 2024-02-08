@@ -124,7 +124,7 @@ h2 {
   border: 1px solid;
   border-radius: 5px;
   margin: 5px 0;
-  color: rgb(173, 180, 68);
+  color: rgb(238, 255, 0);
 }
 
 .list li i {
@@ -146,6 +146,9 @@ span {
   flex: 1;
   padding: 0 0.5rem;
   font-weight: lighter;
+}
+.textSpan{
+;
 }
 
 .reset {
@@ -169,6 +172,7 @@ span {
 
 .li-item .cizgi{
   text-decoration: line-through;
+  color:rgb(238, 255, 0) 
 }
 
 
